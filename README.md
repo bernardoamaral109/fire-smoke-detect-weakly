@@ -1,2 +1,2 @@
-# fire-smoke-detect-weakly
-Fire and Smoke detection with weakly-supervised methods
+# Fire and Smoke detection with weakly-supervised methods
+
