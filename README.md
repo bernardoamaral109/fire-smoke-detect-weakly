@@ -14,11 +14,11 @@ The number of publicly available datasets with annotated fire and smoke regions 
 
 ## CAM
 
-###### CAM approach
+#### CAM approach
 
-![alt text](readme/vgg19_cam_fire.png)
+![alt text](readme/vgg19.png)
 
-###### CAM heatmaps
+#### CAM heatmaps
 ![alt text](readme/fire_cam.png?raw=true)
 ![alt text](readme/smoke_cam.png?raw=true)
 
@@ -28,15 +28,27 @@ The number of publicly available datasets with annotated fire and smoke regions 
 
 ## Results
 
-###### Fire results
+#### Fire results
+
+| Method    |       Approach    |   mIoU  | Standard Dev. |
+| :---:     |       :---:       |   :---: |     :---:     |
+| Method 1  | fully-supervised  |  0.856  |     0.073     |
+| Proposed  | weakly-supervised |  0.735  |     0.142     |
+
 ![alt text](readme/compare_fire.jpg?raw=true)
 
-###### Smoke results
+#### Smoke results
+
+| Method    |      Approach     |  mIoU  | Standard Dev. |
+| :---:     |        :---:      |  :---: |     :---:     |
+| Method 1  | fully-supervised  |  0.771 |     0.157     |
+| Proposed  | weakly-supervised |  0.760 |     0.149     |
+
 ![alt text](readme/compare_smoke.jpg?raw=true)
 
 
 ## Models 
 
- [Models used.](https://drive.google.com/drive/folders/1RDAnKYQEwi4H3YsE_c_SsSeYvbFQfuDl?usp=sharing).
+> https://drive.google.com/drive/folders/1RDAnKYQEwi4H3YsE_c_SsSeYvbFQfuDl?usp=sharing
 
 
