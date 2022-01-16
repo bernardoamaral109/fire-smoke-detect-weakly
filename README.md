@@ -9,3 +9,26 @@ The number of publicly available datasets with annotated fire and smoke regions 
 ![alt text](readme/proposal.png?raw=true)
 
 
+## Labelling Method
+![alt text](readme/mask.png?raw=true)
+
+## CAM
+
+###### CAM approach
+![alt text](readme/vgg19_cam_fire.png?raw=true)
+
+###### CAM heatmaps
+![alt text](readme/fire_cam.png?raw=true)
+![alt text](readme/smoke_cam.png?raw=true)
+
+## CRF
+
+![alt text](readme/crf.png?raw=true)
+
+##Results
+
+###### Fire results
+![alt text](readme/compare_fire.jpg?raw=true)
+
+###### Smoke results
+![alt text](readme/compare_smoke.jpg?raw=true)
