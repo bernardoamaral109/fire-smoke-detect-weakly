@@ -52,7 +52,7 @@ def get_output(folder_path, model_name, path_test):
 
     images_np = sorted_alphanumeric(os.listdir(path_test)) 
     K.clear_session()
-    model = models.load_model(folder_path+model_name)
+    model = models.load_model("models/"+model_name)
     # model.summary()
 
     out_class = 1

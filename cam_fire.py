@@ -49,20 +49,20 @@ def crf_dense(maskd,image_rgb,r,xy):
 
     
 def get_output(folder_path, model_name, path_test):
-    print("oi")
 
     images_np = sorted_alphanumeric(os.listdir(path_test)) 
     K.clear_session()
-    model = models.load_model(folder_path+model_name)
+    model = models.load_model("models/"+model_name)
     # model.summary()
 
     out_class = 0
     out_mask_list = []
 
     for img in images_np:
-        print("ola")
         img_path = path_test+img
         img_name = img[0:4]
+        print("\nImg processing: " , img_name)
+
         original_img = cv2.imread(img_path)
         width, height, _ = original_img.shape
 
@@ -73,7 +73,7 @@ def get_output(folder_path, model_name, path_test):
 
         # Image perdiction
         preds = model.predict(input_img)
-        print(preds)
+
         # Return empty mask if no fire in image
         if preds[0][0] < 0.5 :
             out_mask_list.append(np.zeros((height, width), dtype=float))
@@ -153,7 +153,7 @@ def main():
     folder_path = "../thesis/other_models/adam_1e-05/"
     path_test = "../thesis/AnnotDatasets/Fire_dataset/img/"
 
-    model_name = "adam_1e-05.h5"
+    model_name = "fire_model.h5"
 
     output_mask_list = get_output(folder_path, model_name, path_test)
 
