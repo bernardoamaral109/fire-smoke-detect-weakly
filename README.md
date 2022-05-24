@@ -28,7 +28,7 @@ The number of publicly available datasets with annotated fire and smoke regions 
 
 ## Results
 
-#### Fire results
+### Fire results
 
 | Method    |       Approach    |   mIoU  | Standard Dev. |
 | :---:     |       :---:       |   :---: |     :---:     |
@@ -37,7 +37,7 @@ The number of publicly available datasets with annotated fire and smoke regions 
 
 ![alt text](readme/compare_fire.jpg?raw=true)
 
-#### Smoke results
+### Smoke results
 
 | Method    |      Approach     |  mIoU  | Standard Dev. |
 | :---:     |        :---:      |  :---: |     :---:     |
